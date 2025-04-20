@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Madman's Poem</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #1b1b1b, #2b1f2f);
+        font-family: "Roboto Slab", serif;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        padding: 30px;
+        width: 100%;
+        max-width: 750px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #ff416c, #ffb347);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #ffb347;
+        opacity: 0.85;
+        letter-spacing: 1px;
+        animation: fadeIn 2s ease-in forwards;
+      }
+
+      .poem p {
+        margin: 0 0 1.4em;
+        font-size: 1.1rem;
+        background: linear-gradient(120deg, #c0392b, #9b59b6, #f1c40f);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: wave 6s ease-in-out infinite;
+      }
+
+      .special-love {
+        color: #3498db; /* Blue */
+        animation: colorChange 3s ease-in-out infinite alternate;
+      }
+
+      .special-madman {
+        color: #e74c3c; /* Red */
+        animation: colorChange 3s ease-in-out infinite alternate;
+      }
+
+      .special-she-i {
+        color: #2ecc71; /* Green */
+        animation: colorChange 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes wave {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes colorChange {
+        0% {
+          color: #3498db; /* Original color */
+        }
+        100% {
+          color: #1d77a1; /* Slightly darker blue */
+        }
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.9rem;
+        }
+
+        .container {
+          padding: 20px;
+        }
+
+        .poem p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>A Madman's Poem</h1>
+      <h2>for the one who made the madman sane</h2>
+      <div class="poem">
+        <p>
+          I once stood,<br />I once loved,<br />I once tried,<br />I once died.
+        </p>
+
+        <p>
+          From heart to blood,<br />
+          A man who <span class="special-love">believed</span>—<br />
+          The sky would rain gold.<br />
+          A man who <span class="special-love">believed</span>—<br />
+          The days would slow.<br />
+          A man who <span class="special-love">believed</span>—<br />
+          The sun would rise,<br />
+          No matter how dark the night became.<br />
+          A man survived...<br />
+          Until <span class="special-love">belief</span> became two.<br />
+          A man died...<br />
+          When <span class="special-love">belief</span> was one.
+        </p>
+
+        <p>
+          A man's <span class="special-madman">belief</span><br />
+          Wasn't enough to lead.<br />
+          A man's heart<br />
+          Wasn’t his to give.<br />
+          A man's heart<br />
+          Was his to command.
+        </p>
+
+        <p>
+          A man stood.<br />
+          A man loved.<br />
+          A man tried.<br />
+          A man died.
+        </p>
+
+        <p>
+          Where pens drop,<br />
+          And hearts clap.<br />
+          Where men clash,<br />
+          And swords slash.<br />
+          Where <span class="special-she-i">she</span> walks,<br />
+          Where <span class="special-she-i">she</span> flies.<br />
+          Where <span class="special-she-i">she</span> giggles,<br />
+          Where <span class="special-she-i">she</span> cries.<br />
+          Where <span class="special-she-i">she's</span> there,<br />
+          Where <span class="special-she-i">she's</span> here.<br />
+          Where <span class="special-she-i">she's</span> here,<br />
+          Where <span class="special-she-i">she's</span> not.<br />
+          Where <span class="special-she-i">she's</span> not...<br />
+          Where <span class="special-she-i">she's</span> not...<br />
+          Where <span class="special-she-i">she's</span> not...<br />
+          Where's <span class="special-she-i">she</span>?
+        </p>
+
+        <p>
+          A <span class="special-madman">madman</span> when
+          <span class="special-she-i">she</span> left.<br />
+          A <span class="special-madman">madman</span> I was.<br />
+          A <span class="special-madman">madman</span> I became.<br />
+          A <span class="special-madman">madman</span> they called me.<br />
+          And a <span class="special-madman">madman</span> I will remain.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
